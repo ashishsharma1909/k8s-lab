@@ -12,7 +12,7 @@ mounts storage directly from the host machine to be used by a container.
 	$ mkdir /home/skytap/mysql
 	```
 	- Create a `PersistentVolume` in the ICP UI. Go to Platform > Storage
-	- Name = `mysql-pv`, Capacity = 20, Reclaim policy = `Recycle`, Storage Type = `HostPath`
+	- Name = `mysql-pv`, Capacity = `20`, Reclaim policy = `Recycle`, Storage Type = `HostPath`
 	- Go to Parameters tab, Key = `path`, Value = `/home/skytap/mysql`
 - Before deploying the `wordpress-deployment.yaml` you need to follow these steps
 	- Open a terminal and run
@@ -20,7 +20,7 @@ mounts storage directly from the host machine to be used by a container.
 	$ mkdir /home/skytap/wordpress
 	```
 	- Create a `PersistentVolume` in the ICP UI. Go to Platform > Storage
-	- Name = `wordpress-pv`, Capacity = 20, Reclaim policy = `Recycle`, Storage Type = `HostPath`
+	- Name = `wordpress-pv`, Capacity = `20`, Reclaim policy = `Recycle`, Storage Type = `HostPath`
 	- Go to Parameters tab, Key = `path`, Value = `/home/skytap/wordpress`
 	- Change the `apiVersion` for the `Deployment` in `wordpress-deployment.yaml` to `apps/v1beta2`
 		this is because we are using a version of Kubernetes < 1.9
