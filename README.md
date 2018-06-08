@@ -1,7 +1,6 @@
-# k8s-lab
-labs for kubernetes
+# Kubernetes Labs
 
-## Deploying Wordpress on ICP
+## Deploying a stateful Wordpress & MySQL on IBM Cloud Private
 
 NOTE: HostPath persistence is not suitable for production deployments! HostPath
 mounts storage directly from the host machine to be used by a container.
