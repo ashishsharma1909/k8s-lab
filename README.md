@@ -17,7 +17,7 @@ mounts storage directly from the host machine to be used by a container.
 - Before deploying the `wordpress-deployment.yaml` you need to follow these steps
 	- Open a terminal and run
 	```
-	mkdir /home/skytap/wordpress
+	$ mkdir /home/skytap/wordpress
 	```
 	- Create a `PersistentVolume` in the ICP UI. Go to Platform > Storage
 	- Name = `wordpress-pv`, Capacity = 20, Reclaim policy = `Recycle`, Storage Type = `HostPath`
