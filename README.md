@@ -3,6 +3,9 @@ labs for kubernetes
 
 ## Deploying Wordpress on ICP
 
+NOTE: HostPath persistence is not suitable for production deployments! HostPath
+mounts storage directly from the host machine to be used by a container.
+
 - Follow this [tutorial](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 - Before deploying the `mysql-deployment.yaml` you need to follow these steps
 	- Open a terminal and run `mkdir /home/skytap/mysql`
