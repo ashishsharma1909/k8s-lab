@@ -7,7 +7,8 @@ mounts storage directly from the host machine to be used by a container.
 
 - Follow this [tutorial](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
 - Before deploying the `mysql-deployment.yaml` you need to follow these steps
-	- Open a terminal and run `mkdir /home/skytap/mysql`
+	- Open a terminal and run
+	`$ mkdir /home/skytap/mysql`
 	- Create a `PersistentVolume` in the ICP UI. Go to Platform > Storage
 	- Name = mysql-pv, Capacity = 20, Reclaim policy = Recycle, Storage Type = HostPath
 	- Go to Parameters tab, Key = `path`, Value = `/home/skytap/mysql`
